@@ -24,9 +24,9 @@
 <body>
 <main>
 <h1>Política de Privacidade — Leviã</h1>
-<p class="data">Última atualização: 4 de outubro de 2026 · Versão do app: 0.3.2</p>
+<p class="data">Última atualização: 7 de outubro de 2026 · Versão do app: 0.4.0</p>
 
-<p class="destaque"><strong>Resumo:</strong> tudo o que você registra no Leviã fica salvo apenas no seu celular. O app não tem cadastro, não envia seus dados de saúde para servidores, não exibe anúncios e não vende nem compartilha suas informações.</p>
+<p class="destaque"><strong>Resumo:</strong> tudo o que você registra no Leviã fica salvo apenas no seu celular. O app não tem cadastro, não exibe anúncios e não vende suas informações. A única exceção é opcional: quando <strong>você</strong> pede a análise de uma foto do prato por inteligência artificial, essa foto é enviada para ser analisada e não fica guardada (item 4.1).</p>
 
 <h2>1. Quem somos</h2>
 <p>O Leviã é um aplicativo de registro pessoal de peso, alimentação, tratamento com medicamentos GLP-1 e diabetes. Para dúvidas ou pedidos sobre privacidade, fale com a equipe do Leviã pelo e-mail <a href="mailto:contatoapplevia@gmail.com">contatoapplevia@gmail.com</a>.</p>
@@ -35,12 +35,13 @@
 <p>Somente as informações que você mesmo digita:</p>
 <ul>
   <li><strong>Perfil:</strong> nome, como prefere ser chamado(a), pronome, sexo biológico, idade, altura, peso, meta de peso e tipo de diabetes (se informar).</li>
-  <li><strong>Peso e alimentação:</strong> pesagens, refeições (tipo, horário, alimentos, calorias, proteínas e carboidratos), água, receitas e exercícios.</li>
+  <li><strong>Peso e alimentação:</strong> pesagens, refeições (tipo, horário, alimentos, calorias, proteínas, carboidratos, gorduras e fibras), água, receitas e exercícios.</li>
   <li><strong>Fotos dos pratos (opcional):</strong> se você fotografar uma refeição ou escolher uma foto da galeria, uma cópia fica guardada dentro do app, junto da refeição.</li>
   <li><strong>Modo GLP-1:</strong> doses, dosagem, local de aplicação, sintomas, apetite e configuração da caneta.</li>
   <li><strong>Diabetes:</strong> glicemias, faixa-alvo, lembretes de medição e notas.</li>
   <li><strong>Medicações:</strong> nome, dose, tipo de uso (contínuo, tratamento ou esporádico), horários e observações.</li>
-  <li><strong>Preferências:</strong> idioma e tema de cores.</li>
+  <li><strong>Preferências:</strong> idioma, tema de cores e se as dicas de uso estão ligadas.</li>
+  <li><strong>Identificador de instalação:</strong> um código aleatório criado na primeira análise de foto por IA. Ele não contém seu nome nem dados do aparelho e serve só para contar quantas análises gratuitas você já usou.</li>
   <li><strong>E-mail:</strong> o endereço que você informa para receber os relatórios. Ele fica salvo só no aparelho e é usado apenas para preencher o destinatário quando você envia um relatório.</li>
 </ul>
 <p>Alguns desses dados são <strong>dados pessoais sensíveis de saúde</strong> (LGPD, art. 5º, II). Eles são tratados apenas para que o app funcione para você, com o seu consentimento ao registrá-los.</p>
@@ -55,16 +56,35 @@
   <li><strong>Notícias:</strong> baixar artigos públicos de sites de saúde (por exemplo, tuasaude.com). Esses sites recebem apenas uma requisição comum de leitura, como em qualquer navegador (incluindo o endereço IP). Nenhum dado seu é enviado.</li>
   <li><strong>Atualizações do app:</strong> verificar e baixar correções pelos servidores da Expo (expo.dev), que recebem informações técnicas como versão do app e sistema operacional — nunca seus registros.</li>
   <li><strong>Google Play:</strong> instalação e atualizações do app seguem a política de privacidade do Google.</li>
+  <li><strong>Análise de foto por IA:</strong> somente quando você pede (item 4.1).</li>
 </ul>
+
+<h2>4.1 Análise da foto do prato por inteligência artificial (opcional)</h2>
+<p>Ao tocar em <strong>"Analisar com IA"</strong>, e só depois de você concordar na primeira vez, o Leviã envia:</p>
+<ul>
+  <li><strong>a foto do prato</strong>, reduzida para no máximo 1024 pixels;</li>
+  <li><strong>o identificador de instalação</strong> (código aleatório, item 2) e o <strong>idioma</strong> do app;</li>
+  <li>dados técnicos de qualquer conexão à internet, como o <strong>endereço IP</strong>.</li>
+</ul>
+<p>Nenhum outro dado vai junto: nem seu nome, nem peso, glicemia, medicações ou outros registros.</p>
+<p><strong>Para quem vai e por quê:</strong></p>
+<ul>
+  <li><strong>Servidor do Leviã na Cloudflare</strong> (Cloudflare, Inc.), que recebe o pedido, confere o limite de análises gratuitas e repassa a foto. Ele <strong>não guarda a foto</strong>. Guarda apenas o identificador de instalação com a data e a hora das análises (por até 8 dias, para contar o limite semanal) e contadores sem identificação por endereço IP (por até 2 horas) e por dia, para evitar abuso.</li>
+  <li><strong>Google Gemini</strong> (Google LLC), o serviço de IA que identifica os alimentos e estima as quantidades. O Leviã usa o plano pago da API, no qual, segundo os termos do Google, as fotos e respostas <strong>não são usadas para treinar os modelos do Google</strong>. O Google pode reter os dados por tempo limitado para detectar abuso, conforme os termos da API.</li>
+</ul>
+<p>A resposta da IA (lista de alimentos e gramas estimados) volta para o seu celular, onde <strong>você confere e corrige</strong> antes de salvar. Os valores nutricionais vêm da tabela de alimentos do próprio app ou, quando o alimento não está na tabela, de uma estimativa da IA, identificada como tal.</p>
+<p><strong>Base legal e transferência internacional:</strong> o envio depende do seu <strong>consentimento</strong> (LGPD, art. 7º, I, e art. 11, I), pedido no próprio app antes da primeira análise. Os servidores da Cloudflare e do Google podem ficar fora do Brasil; ao consentir, você autoriza essa transferência internacional (art. 33, VIII). Você pode deixar de usar a análise a qualquer momento e continuar registrando as refeições normalmente, sem IA.</p>
+<p><strong>Cuidados:</strong> fotografe apenas o prato. Evite rostos, documentos ou qualquer informação pessoal na imagem.</p>
 
 <h2>5. Notificações</h2>
 <p>Os lembretes de dose, medicação, medição de glicemia e refeições são agendados <strong>no próprio aparelho</strong>, depois que você autoriza as notificações. Você pode desativá-los no app ou nas configurações do Android.</p>
 
 <h2>5.1 Câmera, fotos e calendário</h2>
 <ul>
-  <li><strong>Câmera e galeria:</strong> usadas só quando você toca em fotografar ou escolher a foto de um prato. As fotos ficam no aparelho e não são enviadas a ninguém. Se um recurso futuro (como reconhecimento do prato por IA) precisar enviar a foto, o app vai pedir sua autorização antes e esta política será atualizada.</li>
+  <li><strong>Câmera e galeria:</strong> usadas só quando você toca em fotografar ou escolher a foto de um prato. As fotos ficam guardadas no aparelho. Elas só saem do celular se você pedir a análise por IA (item 4.1).</li>
   <li><strong>Calendário:</strong> usado só se você ativar "Adicionar ao meu calendário" em uma medicação. O app cria eventos com o nome e o horário do remédio no calendário do celular; o Leviã não lê seus outros eventos. Se esse calendário estiver ligado à sua conta Google, os eventos são sincronizados pelo próprio Google Agenda, conforme a política do Google.</li>
   <li><strong>Backup e relatório:</strong> ao tocar em "Fazer backup" ou "Relatório para o médico", o app gera um arquivo no aparelho e abre o compartilhamento do Android. O arquivo só sai do celular para o destino que <strong>você</strong> escolher (Drive, WhatsApp, e-mail etc.), sob as regras desse serviço. O Leviã não recebe cópia.</li>
+  <li><strong>Backup com senha (recomendado):</strong> você pode proteger o arquivo de backup com uma senha. Nesse caso, os dados são criptografados no próprio celular (AES-256-GCM, com a chave derivada da senha por scrypt) e o arquivo só pode ser aberto com essa senha. O Leviã não guarda a senha nem tem como recuperá-la. As fotos dos pratos e o identificador de instalação não entram no backup.</li>
 </ul>
 
 <h2>5.2 Senha e biometria</h2>
@@ -76,7 +96,7 @@
 
 <h2>6. O que não fazemos</h2>
 <ul>
-  <li>Não vendemos, alugamos nem compartilhamos seus dados com terceiros.</li>
+  <li>Não vendemos nem alugamos seus dados. O único compartilhamento é o da foto que você pede para analisar, com os serviços do item 4.1, só para fazer essa análise.</li>
   <li>Não exibimos anúncios e não usamos ferramentas de rastreamento ou estatísticas de uso.</li>
   <li>Não acessamos localização, contatos ou microfone. Câmera, fotos e calendário só são usados quando você aciona esses recursos (item 5.1).</li>
 </ul>
@@ -94,7 +114,7 @@
 <p>O Leviã é uma ferramenta de registro e organização pessoal. Ele não faz diagnóstico, não prescreve tratamento e não substitui o acompanhamento de médico, nutricionista ou outro profissional de saúde.</p>
 
 <h2>11. Mudanças nesta política</h2>
-<p>Se uma versão futura passar a enviar dados para fora do aparelho (por exemplo, um recurso de reconhecimento de alimentos por foto), esta política será atualizada <strong>antes</strong> do lançamento, explicando quais dados são enviados, para quem e por quê. A data no topo desta página indica a última alteração.</p>
+<p>Se uma versão futura passar a enviar outros dados para fora do aparelho, ou a usar outros serviços além dos descritos aqui, esta política será atualizada <strong>antes</strong> do lançamento, explicando quais dados são enviados, para quem e por quê. A data no topo desta página indica a última alteração.</p>
 </main>
 </body>
 </html>
