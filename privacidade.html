@@ -22,9 +22,9 @@
 <body>
 <main>
 <h1>Política de Privacidade — Leviã PWA</h1>
-<p class="data">Última atualização: 15 de outubro de 2026 · Versão publicada: 0.4.0</p>
+<p class="data">Última atualização: 19 de outubro de 2026 · Versão publicada: 0.4.0</p>
 
-<p class="destaque"><strong>Resumo:</strong> o Leviã PWA não tem cadastro, login, anúncios nem conta própria. Os registros ficam no armazenamento local do navegador. A única exceção opcional é a análise de uma foto do prato por inteligência artificial, solicitada por você e protegida por consentimento.</p>
+<p class="destaque"><strong>Resumo:</strong> o Leviã PWA não tem cadastro ou login na versão atualmente publicada, não recebe os registros locais de saúde e não armazena dados de cartão. A única exceção atualmente ativa é a análise opcional de uma foto do prato por inteligência artificial, solicitada por você e protegida por consentimento. Se o checkout e as contas forem ativados, os dados adicionais descritos no item 4.2 serão tratados somente para cobrança, acesso e suporte.</p>
 
 <h2>1. Quem somos</h2>
 <p>O Leviã é uma ferramenta web de registro pessoal de peso, alimentação, tratamento com medicamentos GLP-1 e diabetes. Para dúvidas ou pedidos sobre privacidade, fale com a equipe pelo e-mail <a href="mailto:contatoapplevia@gmail.com">contatoapplevia@gmail.com</a>.</p>
@@ -40,7 +40,7 @@
 <p>Esses dados podem incluir informações pessoais sensíveis de saúde. O Leviã não recebe cópia deles enquanto você apenas usa o registro local.</p>
 
 <h2>3. Onde os dados ficam</h2>
-<p>Os registros ficam no armazenamento local do navegador, vinculados à origem do site, ao navegador e ao aparelho. Não existe conta, login nem servidor do Leviã recebendo esses registros.</p>
+<p>Os registros ficam no armazenamento local do navegador, vinculados à origem do site, ao navegador e ao aparelho. Não existe conta, login nem servidor do Leviã recebendo esses registros na versão atualmente publicada.</p>
 <p>Os dados podem ser apagados se você limpar os dados do site, usar modo privado, trocar de navegador ou aparelho, ou se o próprio navegador liberar espaço. O Leviã não consegue recuperar dados apagados. Antes de trocar de aparelho, use o backup ou a exportação do próprio PWA e compartilhe o arquivo somente com o destino que você escolher.</p>
 
 <h2>4. Quando o PWA usa a internet</h2>
@@ -48,7 +48,8 @@
 <ul>
   <li>carregar o próprio site e seus arquivos públicos;</li>
   <li>baixar conteúdo público de saúde, quando essa função for usada;</li>
-  <li>realizar a análise opcional de foto por IA, descrita abaixo.</li>
+  <li>realizar a análise opcional de foto por IA, descrita no item 4.1;</li>
+  <li>quando o recurso for habilitado, processar uma contratação, confirmar pagamentos e manter o acesso ao plano pago, conforme o item 4.2.</li>
 </ul>
 <p>As conexões podem incluir dados técnicos normais, como endereço IP, navegador, sistema operacional e horário da requisição. O Leviã não usa esses dados para criar perfil de publicidade ou rastreamento.</p>
 
@@ -64,6 +65,24 @@
 <p>A resposta volta ao navegador para você conferir e corrigir. Nenhuma refeição é salva automaticamente antes da sua confirmação.</p>
 <p>O envio depende do seu consentimento e você pode simplesmente não usar a análise por IA. Fotografe apenas o prato: não inclua rostos, documentos ou outras informações pessoais.</p>
 
+<h2>4.2 Pagamentos, assinaturas e códigos de ativação</h2>
+<p>Na versão atualmente publicada, o checkout e o desbloqueio pago ainda não estão ativos. Portanto, o Leviã não coleta dados de cartão, não processa pagamentos e não mantém uma conta de assinante nesta versão.</p>
+<p>Quando a contratação for habilitada, o pagamento será processado por um provedor externo, inicialmente previsto como Mercado Pago. O usuário será direcionado para a página segura do provedor. O Leviã não recebe nem armazena o número completo do cartão, código de segurança ou senha bancária.</p>
+<p>Para criar e administrar uma assinatura, o Leviã poderá tratar:</p>
+<ul>
+  <li>nome e endereço de e-mail informado pelo usuário;</li>
+  <li>um identificador interno e aleatório da conta;</li>
+  <li>identificador da compra, plano ou assinatura no provedor;</li>
+  <li>valor, moeda, status, datas de cobrança, renovação, cancelamento, estorno ou contestação;</li>
+  <li>identificador técnico da instalação e informações necessárias para liberar o recurso contratado;</li>
+  <li>registros técnicos de segurança, como tentativas de ativação e prevenção de fraude.</li>
+</ul>
+<p>O provedor de pagamento poderá coletar e tratar dados adicionais diretamente, conforme sua própria política de privacidade. O Leviã receberá somente as informações necessárias para confirmar a transação, liberar ou suspender o plano, enviar suporte e cumprir obrigações legais.</p>
+<p>A confirmação de pagamento será recebida por notificação técnica do provedor e validada no servidor do Leviã. O retorno do navegador para uma página de sucesso, sozinho, não será usado como prova de pagamento.</p>
+<p>Depois da confirmação, o Leviã poderá enviar ao e-mail da conta um código ou link de ativação. Esse código será aleatório, terá validade limitada, será vinculado à conta e à transação, poderá ser usado uma única vez e será armazenado de forma protegida. Em caso de troca de aparelho, o usuário poderá solicitar uma nova ativação pelo e-mail da conta, sujeita a verificações de segurança.</p>
+<p>Dados de pagamento, assinatura e ativação serão mantidos pelo período necessário para fornecer o plano, processar cancelamentos, reembolsos e contestações, prevenir fraude, atender solicitações do titular e cumprir obrigações legais. Quando não forem mais necessários, serão excluídos ou anonimizados, ressalvadas as hipóteses legais de conservação.</p>
+<p>O Leviã não envia dados de saúde, fotos de pratos, glicemias, medicamentos ou registros locais ao provedor de pagamento, ao Typebot ou ao n8n para processar a compra.</p>
+
 <h2>5. Câmera, galeria e notificações</h2>
 <p>A câmera ou a galeria só são acessadas quando você aciona essa função no navegador e concede a permissão. As fotos permanecem no armazenamento local até você apagá-las. Notificações, quando suportadas pelo navegador e autorizadas por você, podem ser usadas para lembretes locais; você pode revogar a permissão nas configurações do navegador.</p>
 
@@ -75,20 +94,21 @@
   <li>não vendemos nem alugamos seus dados;</li>
   <li>não exibimos anúncios nem usamos rastreamento de publicidade;</li>
   <li>não acessamos localização, contatos ou microfone;</li>
-  <li>não mantemos uma cópia dos registros locais do navegador.</li>
+  <li>não mantemos uma cópia dos registros locais do navegador;</li>
+  <li>não armazenamos dados completos de cartão ou credenciais bancárias.</li>
 </ul>
 
 <h2>8. Por quanto tempo os dados ficam guardados</h2>
-<p>Os dados locais ficam no navegador até você apagá-los ou até o navegador removê-los. Dados técnicos e contadores usados para limitar a análise por IA podem ser mantidos por tempo limitado pelos serviços envolvidos, conforme descrito no item 4.1.</p>
+<p>Os dados locais ficam no navegador até você apagá-los ou até o navegador removê-los. Dados técnicos e contadores usados para limitar a análise por IA podem ser mantidos por tempo limitado pelos serviços envolvidos, conforme descrito no item 4.1. Se pagamentos forem habilitados, dados de conta, assinatura, transação e ativação serão mantidos somente pelos prazos necessários às finalidades descritas no item 4.2 e às obrigações legais aplicáveis.</p>
 
 <h2>9. Seus direitos</h2>
-<p>Como os registros ficam no seu navegador, você pode consultá-los, corrigi-los, exportá-los e apagá-los diretamente no PWA. Para dúvidas sobre privacidade, escreva para <a href="mailto:contatoapplevia@gmail.com">contatoapplevia@gmail.com</a>.</p>
+<p>Como os registros ficam no seu navegador, você pode consultá-los, corrigi-los, exportá-los e apagá-los diretamente no PWA. Se uma conta ou assinatura estiver ativa, você também poderá solicitar acesso, correção, exclusão, informação sobre compartilhamento e cancelamento pelo e-mail <a href="mailto:contatoapplevia@gmail.com">contatoapplevia@gmail.com</a>. O pedido poderá exigir confirmação da identidade para proteger a conta.</p>
 
 <h2>10. Crianças e aviso de saúde</h2>
 <p>O Leviã não é destinado a menores de 18 anos. O PWA é uma ferramenta de registro e organização pessoal; não faz diagnóstico, não prescreve tratamento e não substitui o acompanhamento de profissionais de saúde.</p>
 
 <h2>11. Mudanças nesta política</h2>
-<p>Se uma versão futura passar a enviar outros dados para fora do navegador ou usar outros serviços, esta política será atualizada antes do lançamento. A data no topo indica a última alteração.</p>
+<p>Se uma versão futura passar a enviar outros dados para fora do navegador, habilitar contas, pagamentos ou usar outros serviços, esta política será atualizada antes do lançamento do recurso, quando aplicável. A data no topo indica a última alteração.</p>
 </main>
 </body>
 </html>
