@@ -47,13 +47,13 @@ O acesso ao Leviã é liberado por um **serial** (código de ativação) enviado
 - uma conta com marcas irreversíveis (hash) do telefone e do e-mail; do serial guardamos apenas o hash, nunca o texto;
 - os aparelhos ativados (um código aleatório por instalação, no máximo 2 por serial), as datas de uso e o período de teste ou assinatura.
 
-**Lembretes:** se você parar de responder no meio do cadastro, o LEVI pode enviar até 3 lembretes (cerca de 30 segundos, 3 minutos e, no dia seguinte às 19h no fuso do país do seu número); quem consentiu também pode receber um vídeo de apresentação. Esses envios fazem parte da autorização pedida no início da conversa. Responda **PARAR** a qualquer momento e não escrevemos mais.
+**Lembretes:** se você parar de responder no meio do cadastro, o LEVI pode enviar até 3 lembretes (cerca de 30 segundos, 3 minutos e, no dia seguinte às 19h no fuso do país do seu número); quem concluiu o cadastro também pode receber um vídeo de apresentação. Esses envios servem só para concluir o pedido de acesso que você iniciou, com base no legítimo interesse (LGPD, art. 7º, IX), e você pode recusá-los a qualquer momento: responda **PARAR** e não escrevemos mais.
 
 **Atendimento humano:** se o LEVI não conseguir ajudar, a conversa pode ser passada a uma pessoa da equipe, que poderá ler as mensagens trocadas.
 
 ### 4.2 Análise opcional da foto do prato por IA
 
-A análise é **opcional**. Na primeira vez que você toca em **Analisar com IA**, o app mostra um aviso e só envia a foto se você concordar; se cancelar, nada é enviado. A autorização vale para as análises seguintes, e **cada foto só é enviada quando você toca no botão**. Para revogar, basta não usar mais o botão; para o aviso voltar a aparecer, limpe os dados do app neste aparelho. Como o Leviã não guarda as fotos, não há fotos nossas a apagar. O app envia ao servidor do Leviã: a foto reduzida (no máximo 1024 pixels), a licença do seu aparelho, o código aleatório da instalação, o idioma e dados técnicos da conexão (como o IP). O servidor confere a licença e os limites e encaminha **somente a foto** ao **Google Gemini**, que devolve a lista de alimentos e porções estimados.
+A análise é **opcional**. Na primeira vez que você toca em **Analisar com IA**, o app mostra um aviso e só envia a foto se você concordar; se cancelar, nada é enviado. A autorização vale para as análises seguintes, e **cada foto só é enviada quando você toca no botão**. Você pode revogar quando quiser: basta não usar mais o botão, limpar os dados do app neste aparelho (o aviso volta a aparecer) ou pedir pelo canal da seção 9. Como o Leviã não guarda as fotos, não há fotos nossas a apagar. O app envia ao servidor do Leviã: a foto reduzida (no máximo 1024 pixels), a licença do seu aparelho, o código aleatório da instalação, o idioma e dados técnicos da conexão (como o IP). O servidor confere a licença e os limites e encaminha **somente a foto** ao **Google Gemini**, que devolve a lista de alimentos e porções estimados.
 
 - **Finalidade única:** identificar alimentos visíveis e estimar porções. O Leviã **não faz reconhecimento facial**, não cria modelos biométricos e não tenta identificar pessoas.
 - Não enviamos nome, peso, glicemia, medicações ou outros registros.
@@ -88,9 +88,9 @@ Quando você informa seu e-mail, ele pode ser usado para enviar o acesso de test
 
 ## 5. Base legal
 
-- **Consentimento específico e destacado** (LGPD, arts. 7º, I e 11, I): guardar nome, telefone, e-mail e objetivo no atendimento pelo WhatsApp (o objetivo pode revelar dado de saúde) e enviar os lembretes do cadastro; enviar cada foto à IA (seção 4.2); pixel de medição da página de vendas (seção 4.4). Você pode revogar a qualquer momento (seção 9), sem prejuízo do que já foi feito.
-- **Execução de contrato** (art. 7º, V): liberar e manter seu acesso, emitir o serial e processar a assinatura.
-- **Legítimo interesse e segurança** (art. 7º, IX): limitar abuso, prevenir fraude e registrar acessos às rotas administrativas (seção 4.5).
+- **Consentimento específico e destacado** (LGPD, arts. 7º, I e 11, I): guardar nome, telefone, e-mail e objetivo no atendimento pelo WhatsApp (o objetivo pode revelar dado de saúde); enviar fotos à IA (seção 4.2); pixel de medição da página de vendas (seção 4.4). Você pode revogar a qualquer momento (seção 9), sem prejuízo do que já foi feito.
+- **Execução de contrato e procedimentos preliminares a pedido seu** (art. 7º, V): liberar e manter seu acesso, emitir e reenviar o serial, enviar avisos da conta por e-mail ou WhatsApp e processar a assinatura.
+- **Legítimo interesse e segurança** (art. 7º, IX): enviar os lembretes do cadastro (seção 4.1), limitar abuso, prevenir fraude e registrar acessos às rotas administrativas (seção 4.5). Dados de saúde nunca são tratados com base no legítimo interesse.
 - **Obrigação legal e exercício regular de direitos** (art. 7º, II e VI; art. 16): guardar registros de pagamento, reembolso e segurança pelo prazo que a lei exigir ou enquanto necessários para defesa em processos.
 
 ## 6. Com quem compartilhamos e transferência internacional

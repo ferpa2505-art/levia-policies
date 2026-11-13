@@ -25,7 +25,7 @@ Em emergência (hipoglicemia grave, confusão, desmaio, dor no peito, falta de a
 - O acesso é liberado por um **serial pessoal** (código de ativação), enviado pelo atendimento no WhatsApp. Não o compartilhe nem o revenda.
 - Cada serial vale para até **2 aparelhos**. O **teste de 7 dias** começa na primeira ativação de um serial de teste, com limite de uso da IA informado no app. O serial de um plano pago libera o plano contratado e não inicia um novo teste.
 - Podemos limitar, suspender ou revogar acessos em caso de abuso, fraude, tentativa de burlar limites, reembolso ou cancelamento da compra, ou violação destes termos. Você pode pedir um novo serial a qualquer momento pelo próprio WhatsApp (o anterior deixa de valer).
-- **Assinatura:** os planos mensal e anual e seus preços ficam em **www.leviapp.org**, com pagamento pela **Hotmart**. Preço, renovação, cancelamento e reembolso são informados **antes** da contratação, respeitando o Código de Defesa do Consumidor (inclusive o direito de arrependimento de 7 dias em compras online). Cancelamentos e reembolsos são feitos na própria Hotmart ou pelo contato do site. Com o reembolso ou cancelamento, o acesso do plano é encerrado.
+- **Assinatura:** os planos mensal e anual e seus preços ficam em **www.leviapp.org**, com pagamento pela **Hotmart**. Preço, renovação, cancelamento e reembolso são informados **antes** da contratação, respeitando o Código de Defesa do Consumidor (inclusive o direito de arrependimento de 7 dias em compras online). Cancelamentos e reembolsos são feitos na própria Hotmart ou pelo contato do site. Com o reembolso ou o estorno (chargeback) de uma compra, o acesso liberado por ela é encerrado; o simples cancelamento da renovação não encerra o período já pago.
 
 ## 6. Uso adequado
 
@@ -35,7 +35,7 @@ Você concorda em usar o Leviã para fins pessoais, informar dados verdadeiros, 
 
 Os registros de saúde ficam no seu aparelho; o servidor guarda apenas o necessário para liberar o acesso (nome, telefone, e-mail se informado, objetivo informado no WhatsApp, aparelhos e uso). Detalhes, base legal, prestadores, prazos e seus direitos estão na Política de Privacidade. Você é responsável pela exatidão do que registra e por guardar seus backups.
 
-**Senha no navegador (PWA):** no navegador, a proteção dos registros contra quem copiar os dados do navegador depende da força da sua senha. Um PIN numérico curto pode ser descoberto por quem tiver essa cópia. Ao usar o Leviã no navegador, você declara estar ciente desse risco; para os registros mais sensíveis, prefira o app no celular ou uma senha longa. Se esquecer a senha sem biometria ativada, os dados não podem ser recuperados por nós.
+**Senha no navegador (PWA):** no navegador, a proteção dos registros contra quem copiar os dados do navegador depende da força da sua senha. Um PIN numérico curto pode ser descoberto por quem tiver essa cópia. Ao usar o Leviã no navegador, você declara estar ciente desse risco; para os registros mais sensíveis, prefira o app no celular ou uma senha longa. Se esquecer a senha sem biometria ativada, os dados não podem ser recuperados por nós. Este aviso não afasta as nossas obrigações de segurança previstas na LGPD e no Código de Defesa do Consumidor.
 
 ## 8. Análise por IA
 
@@ -51,7 +51,7 @@ O Leviã, sua marca e seu design pertencem a Luis Fernando Paulino (FP Tech & Ar
 
 ## 11. Responsabilidade
 
-Dentro do que a lei permite, não respondemos por decisões de saúde tomadas com base no app, por perda de dados causada por falta de backup ou por senha esquecida, por falhas de terceiros (WhatsApp, Google, Cloudflare, Hotmart, lojas de aplicativos) nem por danos indiretos. Nada nestes termos exclui responsabilidade que a lei não permita excluir, em especial a prevista no Código de Defesa do Consumidor e na LGPD. Havendo responsabilidade, ela se limita ao valor que você pagou pelo serviço nos 12 meses anteriores ao fato, no que a lei permitir.
+Respondemos pelo serviço nos termos do Código de Defesa do Consumidor e da LGPD, e nada nestes termos limita os seus direitos previstos nessas leis. Como o Leviã é uma ferramenta de registro, as decisões de saúde continuam sendo suas e da sua equipe de saúde. Não há responsabilidade nossa quando o dano decorrer exclusivamente de ato seu ou de terceiro, como uso contrário a estes termos, perda de dados por falta de backup ou por senha esquecida, ou falha de serviço de terceiro fora do nosso controle (por exemplo, indisponibilidade do WhatsApp ou da loja de aplicativos), conforme o art. 14, § 3º, do Código de Defesa do Consumidor.
 
 ## 12. Lei aplicável e contato
 
@@ -59,4 +59,4 @@ Estes termos seguem as leis do Brasil; fica eleito o foro do domicílio do consu
 
 ## 13. Alterações
 
-Podemos atualizar estes termos. Mudanças relevantes serão avisadas no app ou pelo WhatsApp antes de valerem; o uso continuado depois do aviso indica concordância. A data e a versão no topo mostram a última alteração.
+Podemos atualizar estes termos. Mudanças relevantes serão avisadas no app ou pelo WhatsApp antes de valerem; o uso continuado depois do aviso indica concordância com os termos, mas mudanças que dependam de consentimento para o tratamento de dados só valem depois de você consentir de novo. Se não concordar, você pode deixar de usar o serviço e pedir a exclusão dos seus dados. A data e a versão no topo mostram a última alteração.
