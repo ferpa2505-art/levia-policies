@@ -24,7 +24,7 @@ Em emergência (hipoglicemia grave, confusão, desmaio, dor no peito, falta de a
 
 - O acesso é liberado por um **serial pessoal** (código de ativação), enviado pelo atendimento no WhatsApp. Não o compartilhe nem o revenda.
 - Cada serial vale para até **2 aparelhos**. O **teste de 7 dias** começa na primeira ativação de um serial de teste, com limite de uso da IA informado no app. O serial de um plano pago libera o plano contratado e não inicia um novo teste.
-- Podemos limitar, suspender ou revogar acessos em caso de abuso, fraude, tentativa de burlar limites, reembolso ou cancelamento da compra, ou violação destes termos. Você pode pedir um novo serial a qualquer momento pelo próprio WhatsApp (o anterior deixa de valer).
+- Podemos limitar, suspender ou revogar acessos em caso de abuso, fraude, tentativa de burlar limites, reembolso ou estorno da compra, ou violação destes termos. Você pode pedir um novo serial a qualquer momento pelo próprio WhatsApp (o anterior deixa de valer).
 - **Assinatura:** os planos mensal e anual e seus preços ficam em **www.leviapp.org**, com pagamento pela **Hotmart**. Preço, renovação, cancelamento e reembolso são informados **antes** da contratação, respeitando o Código de Defesa do Consumidor (inclusive o direito de arrependimento de 7 dias em compras online). Cancelamentos e reembolsos são feitos na própria Hotmart ou pelo contato do site. Com o reembolso ou o estorno (chargeback) de uma compra, o acesso liberado por ela é encerrado; o simples cancelamento da renovação não encerra o período já pago.
 
 ## 6. Uso adequado
