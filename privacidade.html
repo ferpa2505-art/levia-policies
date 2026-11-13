@@ -16,6 +16,8 @@
   ul { padding-left: 1.2rem; }
   li { margin: .25rem 0; }
   a { color: var(--marca); }
+  table { border-collapse: collapse; width: 100%; margin: .5rem 0 1rem; font-size: .95rem; }
+  th, td { border: 1px solid var(--borda); padding: 6px 8px; text-align: left; vertical-align: top; }
   .destaque { background: color-mix(in srgb, var(--marca) 12%, transparent); border-radius: 12px; padding: 12px 16px; }
   .rodape { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--borda); color: var(--suave); font-size: .95rem; }
 </style>
@@ -23,87 +25,133 @@
 <body>
 <main>
 <h1>Política de Privacidade — Leviã</h1>
-<p class="data"><strong>Última atualização:</strong> 12 de novembro de 2026</p>
-<p class="destaque"><strong>Resumo:</strong> os registros de saúde que você anota no Leviã ficam no seu aparelho; o Leviã não recebe cópia deles. Para liberar o acesso, o atendimento pelo WhatsApp guarda seu nome, telefone e objetivo em nosso servidor, e a análise opcional de foto por IA envia a foto do prato para o Google. Não vendemos dados e não exibimos anúncios. O pixel da Meta na página de vendas só funciona com o seu consentimento (seção 4.4). Por segurança, também guardamos por 180 dias um registro dos acessos às rotas restritas da nossa equipe, que inclui o endereço IP de quem as chamou (seção 4.5).</p>
+<p class="data"><strong>Última atualização:</strong> 13 de novembro de 2026 · <strong>Versão:</strong> 2026-11-13</p>
+<p class="destaque"><strong>Resumo:</strong> os registros de saúde que você anota no Leviã ficam no seu aparelho; o Leviã não recebe cópia deles. Para liberar o acesso, o atendimento pelo WhatsApp guarda seu nome, telefone, e-mail (se informado) e objetivo em nosso servidor. A análise de foto por IA é opcional, pede sua autorização antes do primeiro uso e envia só a foto do prato ao Google. Não vendemos dados e não exibimos anúncios. O pixel da Meta na página de vendas só funciona com o seu consentimento. O endereço IP é usado para segurança e limites de uso, com prazos definidos na seção 8.</p>
 <h2>1. Quem é o responsável</h2>
-<p>O Leviã é um aplicativo (Android e web/PWA) de registro pessoal de peso, alimentação, tratamento com medicamentos GLP-1 e diabetes. O responsável pelo tratamento dos dados descritos nesta política (controlador, na LGPD) é <strong>Luis Fernando Paulino, da FP Tech &amp; Art</strong>, Brasil. Contato para privacidade e para exercer seus direitos (encarregado): <strong><a href="mailto:contato@leviapp.org">contato@leviapp.org</a></strong>.</p>
+<p>O Leviã é um aplicativo (Android e web/PWA) de registro pessoal de peso, alimentação, tratamento com medicamentos GLP-1 e diabetes.</p>
+<ul>
+<li><strong>Controlador (LGPD, art. 5º, VI):</strong> Luis Fernando Paulino, pessoa física, que atua com o nome <strong>FP Tech &amp; Art</strong>, Brasil.</li>
+<li><strong>Encarregado pelo tratamento de dados (LGPD, art. 41):</strong> Luis Fernando Paulino.</li>
+<li><strong>Canal de privacidade e direitos:</strong> <strong><a href="mailto:contato@leviapp.org">contato@leviapp.org</a></strong>.</li>
+</ul>
 <h2>2. Dados em dois lugares</h2>
-<p><strong>No seu aparelho</strong> ficam os registros que você escolhe fazer. <strong>No servidor do Leviã</strong> (Cloudflare) ficam apenas os dados necessários para liberar o acesso e controlar o uso. As seções abaixo separam os dois.</p>
+<p><strong>No seu aparelho</strong> ficam os registros que você escolhe fazer. <strong>No servidor do Leviã</strong> (Cloudflare) ficam apenas os dados necessários para liberar o acesso, controlar o uso e manter a segurança. As seções abaixo separam os dois.</p>
 <h2>3. Dados que ficam só no seu aparelho</h2>
 <ul>
-  <li><strong>Perfil:</strong> nome, como prefere ser chamado(a), pronome, sexo biológico, idade, altura, peso, meta de peso e tipo de diabetes, se informados.</li>
-  <li><strong>Peso e alimentação:</strong> pesagens, refeições, alimentos, horários, calorias e nutrientes, água, receitas e exercícios.</li>
-  <li><strong>Saúde:</strong> doses e sintomas de GLP-1, glicemias e faixa-alvo, medicações, horários e observações.</li>
-  <li><strong>Fotos de pratos:</strong> no Android, uma cópia reduzida fica em arquivo no aparelho. No PWA, a foto reduzida é guardada como texto junto da refeição, no armazenamento do navegador.</li>
-  <li><strong>Preferências:</strong> idioma, tema, e-mail para relatórios (se informado), senha e biometria do app.</li>
+<li><strong>Perfil:</strong> nome, como prefere ser chamado(a), pronome, sexo biológico, idade, altura, peso, meta de peso e tipo de diabetes, se informados.</li>
+<li><strong>Peso e alimentação:</strong> pesagens, refeições, alimentos, horários, calorias e nutrientes, água, receitas e exercícios.</li>
+<li><strong>Saúde:</strong> doses e sintomas de GLP-1, glicemias e faixa-alvo, medicações, horários e observações.</li>
+<li><strong>Fotos de pratos:</strong> no Android, uma cópia reduzida fica em arquivo no aparelho. No PWA, a foto reduzida é guardada como texto junto da refeição, no armazenamento do navegador.</li>
+<li><strong>Preferências:</strong> idioma, tema, e-mail para relatórios (se informado), senha e biometria do app.</li>
 </ul>
-<p>Parte disso são <strong>dados pessoais sensíveis de saúde</strong> (LGPD, art. 5º, II). O Leviã não recebe cópia desses registros. Depois que você cria a senha do app, eles são <strong>cifrados no aparelho</strong> (AES-256-GCM) com uma chave de dados aleatória criada no seu aparelho. Como essa chave fica protegida depende de onde você usa o Leviã:</p>
+<p>Parte disso são <strong>dados pessoais sensíveis de saúde</strong> (LGPD, art. 5º, II). Esses registros são criados e guardados por você, no seu aparelho; o Leviã não recebe cópia deles. Depois que você cria a senha do app, eles são <strong>cifrados no aparelho</strong> (AES-256-GCM) com uma chave de dados aleatória criada no seu aparelho. Como essa chave fica protegida depende de onde você usa o Leviã:</p>
 <ul>
-  <li><strong>No celular (Android):</strong> a chave de dados é protegida por uma chave guardada no cofre do sistema do aparelho (Android Keystore). Quem copiar só o armazenamento do app, por exemplo de um backup, não consegue abrir os registros sem essa chave do sistema. A senha do app funciona como trava do app, com limite de tentativas; ela não é a chave dos dados.</li>
-  <li><strong>No navegador (PWA):</strong> o navegador não tem cofre do sistema. A chave de dados é protegida por uma chave derivada da <strong>sua senha</strong> (Argon2id). Nesse caso a proteção contra quem copiar o armazenamento do navegador <strong>depende de a senha ser longa e difícil de adivinhar</strong>: uma senha numérica curta, como um PIN de 4 a 10 dígitos, pode ser descoberta por quem tiver uma cópia dos dados do navegador. Prefira o celular para os registros mais sensíveis ou use uma senha longa.</li>
+<li><strong>No celular (Android):</strong> a chave de dados é protegida por uma chave guardada no cofre do sistema do aparelho (Android Keystore). Quem copiar só o armazenamento do app, por exemplo de um backup, não consegue abrir os registros sem essa chave do sistema. A senha do app funciona como trava do app, com limite de tentativas; ela não é a chave dos dados.</li>
+<li><strong>No navegador (PWA):</strong> o navegador não tem cofre do sistema. A chave de dados é protegida por uma chave derivada da <strong>sua senha</strong> (Argon2id). <strong>Atenção:</strong> nesse caso a proteção contra quem copiar o armazenamento do navegador <strong>depende de a senha ser longa e difícil de adivinhar</strong>. Uma senha numérica curta, como um PIN de 4 a 10 dígitos, pode ser descoberta por quem tiver uma cópia dos dados do navegador, sem limite de tentativas. Prefira o celular para os registros mais sensíveis ou use uma senha longa.</li>
 </ul>
 <p>Nada disso protege contra quem usa o aparelho <strong>desbloqueado</strong> com o app aberto, contra quem já sabe a senha, contra programas maliciosos com acesso total ao aparelho, nem contra uma cópia feita antes de você criar a senha: durante o cadastro, os registros ficam em texto no aparelho até essa etapa.</p>
-<ul><li><strong>Senha esquecida, sem biometria ativada:</strong> os dados ficam inacessíveis e não conseguimos recuperá-los. A única forma de restaurar é um backup feito antes.</li><li><strong>Biometria ativada (celular):</strong> a chave de dados fica protegida pelo sistema do aparelho e é liberada pela biometria. Você consegue trocar a senha sem perder os dados.</li><li>Seu e-mail e a informação de que o cadastro foi concluído ficam guardados sem cifra, no armazenamento do app, para que o app saiba se deve pedir o cadastro.</li></ul>
+<ul>
+<li><strong>Senha esquecida, sem biometria ativada:</strong> os dados ficam inacessíveis e não conseguimos recuperá-los. A única forma de restaurar é um backup feito antes.</li>
+<li><strong>Biometria ativada (celular):</strong> o desbloqueio usa a biometria do próprio aparelho (digital ou rosto), gerida pelo sistema operacional. O Leviã recebe apenas "liberado" ou "não liberado"; <strong>não recebe, não guarda e não analisa</strong> sua digital, seu rosto ou qualquer dado biométrico. Você consegue trocar a senha sem perder os dados.</li>
+<li>Seu e-mail e a informação de que o cadastro foi concluído ficam guardados sem cifra, no armazenamento do app, para que o app saiba se deve pedir o cadastro.</li>
+</ul>
 <h2>4. Dados que ficam no servidor do Leviã</h2>
 <h3>4.1 Atendimento pelo WhatsApp e acesso ao app</h3>
-<p>O acesso ao Leviã é liberado por um <strong>serial</strong> enviado pelo WhatsApp. O atendimento é feito pelo <strong>LEVI, um assistente virtual</strong> (não é uma pessoa), em português (Brasil ou Portugal), inglês, espanhol ou italiano, à sua escolha. Primeiro pedimos o seu <strong>consentimento</strong>; só depois perguntamos seu <strong>nome</strong>, seu <strong>e-mail</strong> (opcional) e seu <strong>objetivo</strong>, que você escolhe em uma lista (por exemplo, emagrecer ou controlar diabetes, o que pode revelar uma condição de saúde). Guardamos no servidor:</p>
+<p>O acesso ao Leviã é liberado por um <strong>serial</strong> (código de ativação) enviado pelo WhatsApp. O atendimento é feito pelo <strong>LEVI, um assistente virtual</strong> (não é uma pessoa), em português (Brasil ou Portugal), inglês, espanhol ou italiano. Primeiro pedimos o seu <strong>consentimento</strong>, de forma destacada; só depois perguntamos seu <strong>nome</strong>, seu <strong>e-mail</strong> (opcional) e seu <strong>objetivo</strong>, que você escolhe em uma lista (por exemplo, emagrecer ou controlar diabetes, o que pode revelar uma condição de saúde). Se você responder "não", nada é guardado. Guardamos no servidor:</p>
 <ul>
-  <li>nome, número de telefone, e-mail (se informado), objetivo escolhido, data e canal do consentimento;</li>
-  <li>a etapa da conversa e identificadores de mensagens, para não repetir respostas;</li>
-  <li>uma conta com marcas irreversíveis (hash) do telefone e do e-mail, sem o serial em texto: do serial guardamos apenas o hash;</li>
-  <li>os aparelhos ativados (um código aleatório por instalação, no máximo 2 por serial), as datas de uso e o período de teste ou assinatura;</li>
-  <li>contadores técnicos para limitar abuso, que incluem o endereço IP e são apagados automaticamente depois de cerca de 31 dias.</li>
+<li>nome, número de telefone, e-mail (se informado), objetivo escolhido, data e canal do consentimento;</li>
+<li>a etapa da conversa e identificadores técnicos das mensagens recebidas, para não repetir respostas;</li>
+<li>as mensagens que o LEVI ainda vai enviar a você (fila de envio, que inclui o texto da mensagem);</li>
+<li>uma conta com marcas irreversíveis (hash) do telefone e do e-mail; do serial guardamos apenas o hash, nunca o texto;</li>
+<li>os aparelhos ativados (um código aleatório por instalação, no máximo 2 por serial), as datas de uso e o período de teste ou assinatura.</li>
 </ul>
-<p><strong>Lembretes:</strong> se você parar de responder, o LEVI pode enviar até 3 mensagens (30 segundos, 3 minutos e, no dia seguinte às 19h no fuso do país do seu número); quem já consentiu também pode receber um vídeo de apresentação. Responda <strong>PARAR</strong> e não escrevemos mais.</p>
+<p><strong>Lembretes:</strong> se você parar de responder no meio do cadastro, o LEVI pode enviar até 3 lembretes (cerca de 30 segundos, 3 minutos e, no dia seguinte às 19h no fuso do país do seu número); quem concluiu o cadastro também pode receber um vídeo de apresentação. Esses envios servem só para concluir o pedido de acesso que você iniciou, com base no legítimo interesse (LGPD, art. 7º, IX), e você pode recusá-los a qualquer momento: responda <strong>PARAR</strong> e não escrevemos mais.</p>
 <p><strong>Atendimento humano:</strong> se o LEVI não conseguir ajudar, a conversa pode ser passada a uma pessoa da equipe, que poderá ler as mensagens trocadas.</p>
-<p><strong>Exclusão:</strong> responda <strong>APAGAR</strong> para excluir seu cadastro, sua conta e o serial.</p>
-<p>Usamos esses dados para criar seu acesso, enviar e reemitir o serial, limitar o uso, prestar suporte e prevenir fraude. As mensagens trafegam pelo WhatsApp e seguem as regras da Meta.</p>
-<p><strong>Não</strong> enviamos ao servidor seus registros de saúde (peso, glicemia, medicações, refeições) para fazer isso.</p>
 <h3>4.2 Análise opcional da foto do prato por IA</h3>
-<p>Ao tocar em <strong>Analisar com IA</strong> e concordar com o aviso, o app envia ao servidor do Leviã: a foto reduzida (no máximo 1024 pixels), a licença do seu aparelho, o código aleatório da instalação, o idioma e dados técnicos da conexão (como o IP). O servidor confere a licença e os limites e encaminha a foto ao <strong>Google Gemini</strong>, que devolve a lista de alimentos estimados.</p>
-<p>Não enviamos nome, peso, glicemia, medicações ou outros registros. O Leviã não guarda a foto; o Google pode tratá-la por tempo limitado para prestar o serviço e detectar abuso, conforme os termos da API usada. Na modalidade paga usada pelo Leviã, fotos e respostas não são usadas para treinar os modelos do Google. A resposta volta ao aparelho e nada é salvo sem a sua confirmação. A análise é opcional: você pode registrar refeições à mão.</p>
-<p>Fotografe apenas o prato; evite rostos, documentos e outras informações pessoais.</p>
-<h3>4.3 Pagamentos</h3>
-<p>A assinatura é vendida pela <strong>Hotmart</strong>, que processa o pagamento: o Leviã não recebe nem guarda número de cartão. Da Hotmart recebemos o identificador da compra, o plano, o valor, o status, as datas e os dados do comprador informados no checkout (nome, e-mail e telefone/WhatsApp), para liberar, renovar ou revogar o seu acesso e enviar o serial do plano. A Hotmart também trata os seus dados conforme a política dela.</p>
-<h3>4.4 Pixel de medição na página de vendas</h3>
-<p>Na página <strong>www.leviapp.org</strong>, se você aceitar no aviso de cookies, carregamos o pixel da <strong>Meta</strong> (Facebook e Instagram). Ele registra a visita à página, dados técnicos do navegador (incluindo endereço IP aproximado) e o clique no botão de assinatura, para medir o desempenho de campanhas. A compra é registrada pela Hotmart, que pode usar o mesmo identificador. <strong>Nenhum dado de saúde é enviado</strong>, e o pixel não é carregado se você recusar ou não responder. Você pode rever a escolha em “Preferências de cookies”, no rodapé do site. Base legal: consentimento (LGPD, art. 7º, I).</p>
-<h3>4.5 Registro de segurança das rotas administrativas</h3>
-<p>O servidor tem rotas restritas à equipe, por exemplo para publicar e medir a Página do Leviã no Facebook. Cada acesso a elas, autorizado ou não, gera um registro de segurança com:</p>
+<p>A análise é <strong>opcional</strong>. Na primeira vez que você toca em <strong>Analisar com IA</strong>, o app mostra um aviso e só envia a foto se você concordar; se cancelar, nada é enviado. A autorização vale para as análises seguintes, e <strong>cada foto só é enviada quando você toca no botão</strong>. Você pode revogar quando quiser: basta não usar mais o botão, limpar os dados do app neste aparelho (o aviso volta a aparecer) ou pedir pelo canal da seção 9. Como o Leviã não guarda as fotos, não há fotos nossas a apagar. O app envia ao servidor do Leviã: a foto reduzida (no máximo 1024 pixels), a licença do seu aparelho, o código aleatório da instalação, o idioma e dados técnicos da conexão (como o IP). O servidor confere a licença e os limites e encaminha <strong>somente a foto</strong> ao <strong>Google Gemini</strong>, que devolve a lista de alimentos e porções estimados.</p>
 <ul>
-  <li>a rota e o método chamados;</li>
-  <li>o <strong>endereço IP</strong> de quem chamou;</li>
-  <li>o resultado (código e motivo, como "autorizado" ou "não autorizado");</li>
-  <li>um detalhe técnico curto, como o identificador do post publicado ou o código de erro da Meta;</li>
-  <li>a data e a hora.</li>
+<li><strong>Finalidade única:</strong> identificar alimentos visíveis e estimar porções. O Leviã <strong>não faz reconhecimento facial</strong>, não cria modelos biométricos e não tenta identificar pessoas.</li>
+<li>Não enviamos nome, peso, glicemia, medicações ou outros registros.</li>
+<li>O Leviã não guarda a foto. O Google pode tratá-la por tempo limitado para prestar o serviço e detectar abuso, conforme os termos da API usada.</li>
+<li>A resposta volta ao aparelho e nada é salvo sem a sua confirmação. Você pode sempre registrar refeições à mão.</li>
+<li>Fotografe apenas o prato; <strong>não inclua rostos, outras pessoas, documentos</strong> ou outras informações pessoais.</li>
 </ul>
-<p><strong>Não guardamos</strong> senhas ou tokens, cabeçalhos de autenticação, o corpo da requisição nem o texto publicado. Esse registro não contém dados de saúde nem dados de quem usa o app. A maior parte dele é da própria equipe; o IP de quem tenta acessar sem autorização também é registrado, com um limite de quantidade por IP e por período para que o registro não seja inundado.</p>
-<p>Finalidade: segurança, prevenção de fraude e rastreabilidade das ações administrativas. Base legal: legítimo interesse e segurança (LGPD, art. 7º, IX). Prazo: 180 dias, apagados automaticamente todos os dias. As mesmas linhas aparecem nos registros operacionais da Cloudflare, que seguem a retenção do plano de hospedagem dela.</p>
+<p>Uma foto de prato pode, junto com o contexto do app, sugerir informação de saúde. Por isso tratamos o envio como <strong>consentimento específico e destacado</strong> (LGPD, art. 11, I).</p>
+<h3>4.3 Pagamentos</h3>
+<p>A assinatura é vendida pela <strong>Hotmart</strong>, que processa o pagamento: o Leviã não recebe nem guarda número de cartão. Da Hotmart recebemos o identificador da compra, o produto e o plano, o valor, a moeda, o status, as datas e os dados do comprador informados no checkout (nome, e-mail e telefone/WhatsApp), para liberar, renovar ou revogar o seu acesso e enviar o serial do plano. Guardamos um resumo desses eventos para comprovar a liberação, o cancelamento ou o reembolso. A Hotmart também trata os seus dados conforme a política dela.</p>
+<h3>4.4 Pixel de medição na página de vendas</h3>
+<p>Na página <strong><a href="https://www.leviapp.org">www.leviapp.org</a></strong>, se você aceitar no aviso de cookies, carregamos o pixel da <strong>Meta</strong> (Facebook e Instagram). Ele registra a visita à página, dados técnicos do navegador (incluindo endereço IP) e o clique no botão de assinatura com o plano e o valor escolhidos, para medir o desempenho de campanhas. <strong>Nenhum dado de saúde é enviado</strong>, e o pixel não é carregado se você recusar ou não responder. Você pode rever a escolha em "Preferências de cookies", no rodapé do site. Base legal: consentimento (LGPD, art. 7º, I).</p>
+<h3>4.5 Usos do endereço IP</h3>
+<p>O endereço IP é usado <strong>só para segurança e controle de uso</strong>, nunca para publicidade dentro do app:</p>
+<ul>
+<li><strong>Limites de uso da análise por IA e proteção contra abuso:</strong> contadores por IP, por instalação e por conta, com janela de cerca de 1 hora; os registros são apagados automaticamente em até 31 dias.</li>
+<li><strong>Limite de tentativas de ativação do serial e de cadastro:</strong> contadores por IP, apagados automaticamente em até 31 dias.</li>
+<li><strong>Registro de segurança das rotas administrativas:</strong> o servidor tem rotas restritas à equipe (por exemplo, para publicar e medir a Página do Leviã no Facebook). Cada acesso a elas, autorizado ou não, gera um registro com a rota e o método, o <strong>endereço IP</strong> de quem chamou, o resultado (código e motivo), um detalhe técnico curto e a data e a hora. <strong>Não guardamos</strong> senhas ou tokens, cabeçalhos de autenticação, o corpo da requisição nem o texto publicado. Prazo: 180 dias, com apagamento automático diário.</li>
+<li><strong>Registros operacionais da Cloudflare</strong>, que hospeda o servidor, seguem a retenção do serviço contratado.</li>
+</ul>
+<p>Base legal: legítimo interesse e segurança (LGPD, art. 7º, IX), usando só o mínimo necessário, e, quando aplicável, cumprimento de obrigação legal (art. 7º, II).</p>
+<h3>4.6 E-mail</h3>
+<p>Quando você informa seu e-mail, ele pode ser usado para enviar o acesso de teste e avisos importantes sobre a sua conta. O envio é feito pela <strong>Resend</strong>. A equipe também recebe por e-mail alertas internos (por exemplo, pedido de atendimento humano ou falha de pagamento), que podem conter o necessário para resolver o seu caso.</p>
 <h2>5. Base legal</h2>
 <ul>
-  <li><strong>Consentimento</strong> (LGPD, arts. 7º, I e 11, I) para guardar nome, telefone e objetivo no atendimento, para enviar a foto à IA e para o pixel de medição da página de vendas (seção 4.4). Você pode revogá-lo a qualquer momento (seção 9).</li>
-  <li><strong>Execução do serviço</strong> (art. 7º, V) para liberar e manter seu acesso.</li>
-  <li><strong>Legítimo interesse e segurança</strong> (art. 7º, IX) para limitar abuso, prevenir fraude e registrar o acesso às rotas administrativas (seção 4.5), usando só o mínimo necessário.</li>
-  <li><strong>Obrigação legal</strong> (art. 7º, II) quando a lei exigir a guarda de algum dado.</li>
+<li><strong>Consentimento específico e destacado</strong> (LGPD, arts. 7º, I e 11, I): guardar nome, telefone, e-mail e objetivo no atendimento pelo WhatsApp (o objetivo pode revelar dado de saúde); enviar fotos à IA (seção 4.2); pixel de medição da página de vendas (seção 4.4). Você pode revogar a qualquer momento (seção 9), sem prejuízo do que já foi feito.</li>
+<li><strong>Execução de contrato e procedimentos preliminares a pedido seu</strong> (art. 7º, V): liberar e manter seu acesso, emitir e reenviar o serial, enviar avisos da conta por e-mail ou WhatsApp e processar a assinatura.</li>
+<li><strong>Legítimo interesse e segurança</strong> (art. 7º, IX): enviar os lembretes do cadastro (seção 4.1), limitar abuso, prevenir fraude e registrar acessos às rotas administrativas (seção 4.5). Dados de saúde nunca são tratados com base no legítimo interesse.</li>
+<li><strong>Obrigação legal e exercício regular de direitos</strong> (art. 7º, II e VI; art. 16): guardar registros de pagamento, reembolso e segurança pelo prazo que a lei exigir ou enquanto necessários para defesa em processos.</li>
 </ul>
 <h2>6. Com quem compartilhamos e transferência internacional</h2>
-<p>Usamos prestadores para operar o serviço: <strong>Cloudflare</strong> (hospedagem do servidor e do banco de dados), <strong>Hetzner</strong> (servidor, na Finlândia, que mantém a conexão com o WhatsApp), <strong>Google</strong> (análise da foto, apenas se você pedir), <strong>Meta/WhatsApp</strong> (canal de conversa; a Meta também recebe a medição de anúncios da seção 4.4, só com consentimento, e o conteúdo que a equipe publica na Página do Leviã no Facebook, sem dados de quem usa o app), <strong>Hotmart</strong> (pagamentos) e, quando usado, um serviço de envio de e-mail. Também recebemos atualizações de aplicativo pela <strong>Expo</strong> e baixamos notícias públicas de sites de saúde; nenhum registro seu vai nessas requisições.</p>
-<p>Alguns desses prestadores processam dados fora do Brasil. Fazemos isso para prestar o serviço, com o mínimo de dados necessário, conforme o art. 33 da LGPD. Não vendemos nem alugamos dados; o pixel de medição da seção 4.4 não recebe dados de saúde.</p>
+<p>Usamos estes prestadores para operar o serviço, cada um só com o necessário:</p>
+<table>
+<thead>
+<tr><th>Prestador</th><th>Para quê</th><th>Dados</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Cloudflare</strong></td><td>hospedagem do servidor, banco de dados e site</td><td>dados do servidor (seção 4), IP</td></tr>
+<tr><td><strong>Hetzner</strong> (Finlândia)</td><td>servidor que mantém a conexão com o WhatsApp</td><td>telefone, mensagens em trânsito, credenciais da conexão</td></tr>
+<tr><td><strong>Meta / WhatsApp</strong></td><td>canal de conversa; pixel da página de vendas (só com consentimento); publicação na Página do Leviã</td><td>mensagens; dados do pixel (seção 4.4)</td></tr>
+<tr><td><strong>Google (Gemini)</strong></td><td>análise da foto, só quando você pede</td><td>foto reduzida</td></tr>
+<tr><td><strong>Hotmart</strong></td><td>pagamentos</td><td>dados da compra (seção 4.3)</td></tr>
+<tr><td><strong>Resend</strong></td><td>envio de e-mail</td><td>e-mail e conteúdo da mensagem</td></tr>
+<tr><td><strong>Expo</strong></td><td>atualizações do aplicativo</td><td>dados técnicos do aparelho; nenhum registro seu</td></tr>
+</tbody>
+</table>
+<p>Também baixamos notícias públicas de sites de saúde; nenhum registro seu vai nessas requisições. Não vendemos nem alugamos dados.</p>
+<p><strong>Transferência internacional:</strong> alguns desses prestadores tratam dados fora do Brasil (por exemplo, nos Estados Unidos e na União Europeia). Essas transferências são feitas apenas para prestar o serviço, com o mínimo de dados, conforme o art. 33 da LGPD e a Resolução CD/ANPD nº 19/2024, com base nas garantias contratuais de proteção de dados oferecidas por cada prestador. Pelo canal da seção 1 você pode pedir o país e a garantia aplicável a cada prestador.</p>
 <h2>7. Backup, relatórios e exportação</h2>
 <p>O arquivo de backup ou relatório é criado no seu aparelho e só sai dele para o destino que você escolher. O backup pode ser protegido com senha (AES-256-GCM); nós não temos a senha nem como recuperá-la. O identificador de instalação e a licença não entram no backup. <strong>Atenção:</strong> no Android as fotos dos pratos não entram no backup; no PWA elas ficam dentro do registro da refeição e <strong>entram no arquivo</strong>. Guarde o arquivo com cuidado, de preferência com senha.</p>
 <h2>8. Por quanto tempo guardamos</h2>
+<table>
+<thead>
+<tr><th>Dado</th><th>Prazo</th></tr>
+</thead>
+<tbody>
+<tr><td>Registros no aparelho</td><td>até você apagar, desinstalar o app ou limpar os dados</td></tr>
+<tr><td>Nome, telefone, e-mail, objetivo, consentimento, conta, serial (hash) e aparelhos</td><td>enquanto a conta existir ou até você pedir a exclusão</td></tr>
+<tr><td>Conversa de cadastro não concluída</td><td>cerca de 3 dias</td></tr>
+<tr><td>Identificadores técnicos das mensagens recebidas</td><td>30 dias</td></tr>
+<tr><td>Fila de mensagens a enviar (inclui o texto)</td><td>até 14 dias, ou antes, se você pedir a exclusão</td></tr>
+<tr><td>Contadores de uso e de tentativas (incluem IP ou código da instalação)</td><td>até 31 dias</td></tr>
+<tr><td>Registro de segurança das rotas administrativas</td><td>180 dias</td></tr>
+<tr><td>Resumo de eventos de pagamento e reembolso</td><td>pelo prazo legal e enquanto necessário para defesa de direitos</td></tr>
+<tr><td>Foto enviada à IA</td><td>não guardada pelo Leviã; retenção pelo Google conforme os termos dele</td></tr>
+</tbody>
+</table>
+<h2>9. Seus direitos e exclusão</h2>
+<p>Pelo art. 18 da LGPD você pode pedir: confirmação de que tratamos seus dados, acesso, correção, anonimização, bloqueio ou eliminação de dados desnecessários, portabilidade, eliminação dos dados tratados com consentimento, informação sobre com quem compartilhamos, informação sobre a possibilidade de não consentir e <strong>revogação do consentimento</strong>.</p>
 <ul>
-  <li><strong>No aparelho:</strong> até você apagar, desinstalar o app ou limpar os dados.</li>
-  <li><strong>No servidor:</strong> nome, telefone e objetivo ficam enquanto sua conta existir ou até você pedir a exclusão; conversas não concluídas, cerca de 3 dias; contadores técnicos, cerca de 31 dias; registro de segurança das rotas administrativas (seção 4.5), 180 dias; dados de cobrança, quando houver, pelo prazo legal.</li>
-  <li><strong>Foto enviada à IA:</strong> o Leviã não a guarda; a retenção pelo Google segue os termos dele.</li>
+<li><strong>Como pedir:</strong> escreva para <strong><a href="mailto:contato@leviapp.org">contato@leviapp.org</a></strong> informando o telefone usado no WhatsApp. Podemos pedir uma confirmação de identidade para proteger sua conta.</li>
+<li><strong>Prazos:</strong> a confirmação e o acesso em formato simplificado são respondidos de imediato quando possível; a declaração completa, em até <strong>15 dias</strong> do pedido (LGPD, art. 19). Os demais pedidos são atendidos sem demora; se não pudermos atender de imediato, explicamos o motivo e o prazo.</li>
+<li><strong>Exclusão pelo WhatsApp:</strong> responda <strong>APAGAR</strong>. Apagamos seu cadastro, sua conta, o serial, os aparelhos ativados, o teste ou assinatura vinculados e as mensagens na fila de envio; o serial e os aparelhos deixam de valer. <strong>Não são apagados na hora:</strong> os contadores técnicos de uso (apagam sozinhos em até 31 dias), os identificadores técnicos de mensagens (30 dias), o resumo de eventos de pagamento (guardado pelo prazo legal), o registro de segurança (180 dias) e as cópias mantidas pelos próprios prestadores, como o histórico da conversa no WhatsApp e os dados da compra na Hotmart, que seguem as políticas deles.</li>
+<li><strong>Parar mensagens:</strong> responda <strong>PARAR</strong>.</li>
+<li>Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</li>
 </ul>
-<h2>9. Seus direitos</h2>
-<p>Pelo art. 18 da LGPD você pode pedir confirmação do tratamento, acesso, correção, anonimização ou exclusão, portabilidade, informação sobre compartilhamento e a <strong>revogação do consentimento</strong>. Escreva para <strong><a href="mailto:contato@leviapp.org">contato@leviapp.org</a></strong> informando o telefone usado no WhatsApp; podemos pedir uma confirmação de identidade para proteger sua conta. Respondemos em até 15 dias. Ao excluir sua conta, o serial e os aparelhos ativados deixam de valer. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
-<h2>10. Segurança</h2>
-<p>Usamos conexão cifrada (HTTPS), guardamos o serial e as marcas de telefone e e-mail apenas como hash, assinamos as licenças, limitamos tentativas, registramos o acesso às rotas administrativas (seção 4.5) e mantemos as chaves fora do código. Nenhum sistema é 100% seguro; em caso de incidente que possa causar dano relevante, avisaremos você e a ANPD conforme a lei.</p>
+<h2>10. Segurança e incidentes</h2>
+<p>Usamos conexão cifrada (HTTPS), guardamos o serial e as marcas de telefone e e-mail apenas como hash, assinamos as licenças, limitamos tentativas, registramos o acesso às rotas administrativas e mantemos as chaves fora do código. Nenhum sistema é 100% seguro.</p>
+<p>Se ocorrer um incidente de segurança que possa causar risco ou dano relevante a você, comunicaremos a <strong>ANPD</strong> e <strong>você</strong> em até <strong>3 dias úteis</strong> contados do momento em que soubermos que o incidente afetou dados pessoais, conforme a Resolução CD/ANPD nº 15/2024 (observado o prazo diferenciado previsto para agentes de pequeno porte, quando aplicável). A comunicação dirá o que aconteceu, quais dados foram afetados, os riscos e o que fazer. Mantemos registro de todo incidente por pelo menos 5 anos.</p>
 <h2>11. Crianças e aviso de saúde</h2>
 <p>O Leviã não é destinado a menores de 18 anos. É uma ferramenta de registro e organização pessoal: não faz diagnóstico, não prescreve tratamento e não substitui médico, nutricionista ou outro profissional de saúde.</p>
 <h2>12. Mudanças nesta política</h2>
-<p>Se passarmos a tratar outros dados ou usar outros serviços, atualizaremos esta política antes de o recurso entrar no ar, com a data no topo.</p>
+<p>Se passarmos a tratar outros dados ou usar outros serviços, atualizaremos esta política antes de o recurso entrar no ar, com a data e a versão no topo. Mudanças relevantes serão avisadas no app ou pelo WhatsApp e, quando dependerem de consentimento, pediremos de novo.</p>
 <p class="rodape">Leia também os <a href="https://leviapp.org/termos">Termos de Serviço</a>.</p>
 </main>
 </body>
