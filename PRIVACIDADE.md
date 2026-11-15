@@ -1,6 +1,6 @@
 # Política de Privacidade — Leviã
 
-**Última atualização:** 13 de novembro de 2026 · **Versão:** 2026-11-13
+**Última atualização:** 15 de novembro de 2026 · **Versão:** 2026-11-15
 
 > **Resumo:** os registros de saúde que você anota no Leviã ficam no seu aparelho; o Leviã não recebe cópia deles. Para liberar o acesso, o atendimento pelo WhatsApp guarda seu nome, telefone, e-mail (se informado) e objetivo em nosso servidor. A análise de foto por IA é opcional, pede sua autorização antes do primeiro uso e envia só a foto do prato ao Google. Não vendemos dados e não exibimos anúncios. O pixel da Meta na página de vendas só funciona com o seu consentimento. O endereço IP é usado para segurança e limites de uso, com prazos definidos na seção 8.
 
@@ -27,7 +27,7 @@ O Leviã é um aplicativo (Android e web/PWA) de registro pessoal de peso, alime
 Parte disso são **dados pessoais sensíveis de saúde** (LGPD, art. 5º, II). Esses registros são criados e guardados por você, no seu aparelho; o Leviã não recebe cópia deles. Depois que você cria a senha do app, eles são **cifrados no aparelho** (AES-256-GCM) com uma chave de dados aleatória criada no seu aparelho. Como essa chave fica protegida depende de onde você usa o Leviã:
 
 - **No celular (Android):** a chave de dados é protegida por uma chave guardada no cofre do sistema do aparelho (Android Keystore). Quem copiar só o armazenamento do app, por exemplo de um backup, não consegue abrir os registros sem essa chave do sistema. A senha do app funciona como trava do app, com limite de tentativas; ela não é a chave dos dados.
-- **No navegador (PWA):** o navegador não tem cofre do sistema. A chave de dados é protegida por uma chave derivada da **sua senha** (Argon2id). **Atenção:** nesse caso a proteção contra quem copiar o armazenamento do navegador **depende de a senha ser longa e difícil de adivinhar**. Uma senha numérica curta, como um PIN de 4 a 10 dígitos, pode ser descoberta por quem tiver uma cópia dos dados do navegador, sem limite de tentativas. Prefira o celular para os registros mais sensíveis ou use uma senha longa.
+- **No navegador (PWA):** o navegador não tem cofre do sistema. A chave de dados é protegida por uma chave derivada da **sua senha** (Argon2id). **Atenção:** a interface do PWA aceita atualmente apenas um PIN numérico de 4 a 10 dígitos. Esse PIN pode ser descoberto por quem tiver uma cópia dos dados do navegador, em um ataque offline sem limite de tentativas. Prefira o celular para os registros mais sensíveis.
 
 Nada disso protege contra quem usa o aparelho **desbloqueado** com o app aberto, contra quem já sabe a senha, contra programas maliciosos com acesso total ao aparelho, nem contra uma cópia feita antes de você criar a senha: durante o cadastro, os registros ficam em texto no aparelho até essa etapa.
 
@@ -39,12 +39,12 @@ Nada disso protege contra quem usa o aparelho **desbloqueado** com o app aberto,
 
 ### 4.1 Atendimento pelo WhatsApp e acesso ao app
 
-O acesso ao Leviã é liberado por um **serial** (código de ativação) enviado pelo WhatsApp. O atendimento é feito pelo **LEVI, um assistente virtual** (não é uma pessoa), em português (Brasil ou Portugal), inglês, espanhol ou italiano. Primeiro pedimos o seu **consentimento**, de forma destacada; só depois perguntamos seu **nome**, seu **e-mail** (opcional) e seu **objetivo**, que você escolhe em uma lista (por exemplo, emagrecer ou controlar diabetes, o que pode revelar uma condição de saúde). Se você responder "não", nada é guardado. Guardamos no servidor:
+O acesso ao Leviã é liberado por um **serial** (código de ativação) enviado pelo WhatsApp. O atendimento é feito pelo **LEVI, um assistente virtual** (não é uma pessoa), em português (Brasil ou Portugal), inglês, espanhol ou italiano. Primeiro pedimos o seu **consentimento**, de forma destacada; só depois perguntamos seu **nome**, seu **e-mail** (opcional) e seu **objetivo**, que você escolhe em uma lista (por exemplo, emagrecer ou controlar diabetes, o que pode revelar uma condição de saúde). Se você responder "não", nenhum novo cadastro de contato (lead) com nome, e-mail e objetivo é criado. Identificadores técnicos e eventualmente dados operacionais podem permanecer conforme os prazos de retenção descritos na seção 8. Guardamos no servidor:
 
 - nome, número de telefone, e-mail (se informado), objetivo escolhido, data e canal do consentimento;
 - a etapa da conversa e identificadores técnicos das mensagens recebidas, para não repetir respostas;
-- as mensagens que o LEVI ainda vai enviar a você (fila de envio, que inclui o texto da mensagem);
-- uma conta com marcas irreversíveis (hash) do telefone e do e-mail; do serial guardamos apenas o hash, nunca o texto;
+- as mensagens na fila de envio (wa_outbox), incluindo seu texto e, no caso do serial pago, o serial em texto, que pode permanecer por até cerca de 14 dias, inclusive após a marcação de enviado, até a limpeza;
+- uma conta com marcas irreversíveis (hash) do telefone e do e-mail; na tabela activation_codes guardamos o hash do serial;
 - os aparelhos ativados (um código aleatório por instalação, no máximo 2 por serial), as datas de uso e o período de teste ou assinatura.
 
 **Lembretes:** se você parar de responder no meio do cadastro, o LEVI pode enviar até 3 lembretes (cerca de 30 segundos, 3 minutos e, no dia seguinte às 19h no fuso do país do seu número); quem concluiu o cadastro também pode receber um vídeo de apresentação. Esses envios servem só para concluir o pedido de acesso que você iniciou, com base no legítimo interesse (LGPD, art. 7º, IX), e você pode recusá-los a qualquer momento: responda **PARAR** e não escrevemos mais.
@@ -53,7 +53,7 @@ O acesso ao Leviã é liberado por um **serial** (código de ativação) enviado
 
 ### 4.2 Análise opcional da foto do prato por IA
 
-A análise é **opcional**. Na primeira vez que você toca em **Analisar com IA**, o app mostra um aviso e só envia a foto se você concordar; se cancelar, nada é enviado. A autorização vale para as análises seguintes, e **cada foto só é enviada quando você toca no botão**. Você pode revogar quando quiser: basta não usar mais o botão, limpar os dados do app neste aparelho (o aviso volta a aparecer) ou pedir pelo canal da seção 9. Como o Leviã não guarda as fotos, não há fotos nossas a apagar. O app envia ao servidor do Leviã: a foto reduzida (no máximo 1024 pixels), a licença do seu aparelho, o código aleatório da instalação, o idioma e dados técnicos da conexão (como o IP). O servidor confere a licença e os limites e encaminha **somente a foto** ao **Google Gemini**, que devolve a lista de alimentos e porções estimados.
+A análise é **opcional**. Na primeira vez que você toca em **Analisar com IA**, o app mostra um aviso e só envia a foto se você concordar; se cancelar, nada é enviado. A autorização vale para as análises seguintes, e **cada foto só é enviada quando você toca no botão**. Você pode revogar quando quiser em **Opções → Revogar autorização de fotos por IA**, preservando seus outros dados, ou pedir pelo canal da seção 9. A revogação não desfaz uma requisição já enviada nem controla a retenção pelo Google. Como o Leviã não guarda as fotos, não há fotos nossas a apagar. O app envia ao servidor do Leviã: a foto reduzida (no máximo 1024 pixels), a licença do seu aparelho, o código aleatório da instalação, o idioma e dados técnicos da conexão (como o IP). O servidor confere a licença e os limites e encaminha **somente a foto** ao **Google Gemini**, que devolve a lista de alimentos e porções estimados.
 
 - **Finalidade única:** identificar alimentos visíveis e estimar porções. O Leviã **não faz reconhecimento facial**, não cria modelos biométricos e não tenta identificar pessoas.
 - Não enviamos nome, peso, glicemia, medicações ou outros registros.
@@ -123,7 +123,7 @@ O arquivo de backup ou relatório é criado no seu aparelho e só sai dele para 
 | Nome, telefone, e-mail, objetivo, consentimento, conta, serial (hash) e aparelhos | enquanto a conta existir ou até você pedir a exclusão |
 | Conversa de cadastro não concluída | cerca de 3 dias |
 | Identificadores técnicos das mensagens recebidas | 30 dias |
-| Fila de mensagens a enviar (inclui o texto) | até 14 dias, ou antes, se você pedir a exclusão |
+| Fila de mensagens (inclui o texto, inclusive após a marcação de enviado) | até 14 dias, ou antes, se você pedir a exclusão |
 | Contadores de uso e de tentativas (incluem IP ou código da instalação) | até 31 dias |
 | Registro de segurança das rotas administrativas | 180 dias |
 | Resumo de eventos de pagamento e reembolso | pelo prazo legal e enquanto necessário para defesa de direitos |
@@ -141,7 +141,7 @@ Pelo art. 18 da LGPD você pode pedir: confirmação de que tratamos seus dados,
 
 ## 10. Segurança e incidentes
 
-Usamos conexão cifrada (HTTPS), guardamos o serial e as marcas de telefone e e-mail apenas como hash, assinamos as licenças, limitamos tentativas, registramos o acesso às rotas administrativas e mantemos as chaves fora do código. Nenhum sistema é 100% seguro.
+Usamos conexão cifrada (HTTPS), guardamos na tabela activation_codes o hash do serial e as marcas de telefone e e-mail como hash, assinamos as licenças, limitamos tentativas, registramos o acesso às rotas administrativas e mantemos as chaves fora do código. O serial pago pode constar em texto na fila de envio, conforme a seção 4.1. Nenhum sistema é 100% seguro.
 
 Se ocorrer um incidente de segurança que possa causar risco ou dano relevante a você, comunicaremos a **ANPD** e **você** em até **3 dias úteis** contados do momento em que soubermos que o incidente afetou dados pessoais, conforme a Resolução CD/ANPD nº 15/2024 (observado o prazo diferenciado previsto para agentes de pequeno porte, quando aplicável). A comunicação dirá o que aconteceu, quais dados foram afetados, os riscos e o que fazer. Mantemos registro de todo incidente por pelo menos 5 anos.
 
