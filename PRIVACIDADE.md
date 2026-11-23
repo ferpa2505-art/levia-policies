@@ -63,6 +63,8 @@ A análise é **opcional**. Na primeira vez que você toca em **Analisar com IA*
 
 Uma foto de prato pode, junto com o contexto do app, sugerir informação de saúde. Por isso tratamos o envio como **consentimento específico e destacado** (LGPD, art. 11, I).
 
+**Descrição por texto (consentimento separado).** Se você escrever o que comeu e tocar em **Analisar descrição com IA**, o app pede um consentimento próprio, separado do da foto. Ao concordar, envia ao servidor do Leviã o texto digitado (no máximo 300 caracteres), a licença do seu aparelho, o código aleatório da instalação e o idioma. O servidor confere a licença e os limites e encaminha **somente o texto** ao **Google Gemini**, que devolve a lista de alimentos e as quantidades estimadas. O Leviã não guarda o texto. O Google pode tratá-lo pelo mesmo prazo e nas mesmas condições descritas para a foto. Não escreva nomes, dados de saúde de terceiros nem outras informações pessoais no campo. Você revoga em **Opções → Revogar autorização de fotos por IA**, que desativa também o envio de texto.
+
 ### 4.3 Pagamentos
 
 A assinatura é vendida pela **Hotmart**, que processa o pagamento: o Leviã não recebe nem guarda número de cartão. Da Hotmart recebemos o identificador da compra, o produto e o plano, o valor, a moeda, o status, as datas e os dados do comprador informados no checkout (nome, e-mail e telefone/WhatsApp), para liberar, renovar ou revogar o seu acesso e enviar o serial do plano. Guardamos um resumo desses eventos para comprovar a liberação, o cancelamento ou o reembolso. A Hotmart também trata os seus dados conforme a política dela.
